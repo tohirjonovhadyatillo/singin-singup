@@ -13,7 +13,7 @@ const Login = () => {
     try {
       await signInWithEmailAndPassword(auth, email, password);
       alert("Login successful!");
-      navigate("/");
+      navigate("/home");
     } catch (error) {
       alert(error.message);
     }
@@ -24,7 +24,7 @@ const Login = () => {
     try {
       await signInWithPopup(auth, provider);
       alert("Google login successful!");
-      navigate("/");
+      navigate("/home");
     } catch (error) {
       alert(error.message);
     }
